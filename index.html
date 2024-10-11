@@ -22,24 +22,25 @@
 <body>
     <header>
         <div class="menu">
-            <a href="#" class="logo">
+            <a href="https://wa.link/p8i8aj" class="logo">
                 <img src="img/S&F-extensa.png" alt="Logo">
             </a>
 
             <ul class="categorias">
-                <li><a href="#">Agência</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Cases</a></li>
-                <li><a href="#">Depoimentos</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#agencia">Agência</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#cases">Cases</a></li>
+                <li><a href="#depoimentos">Depoimentos</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
 
-            <a href="#" class="button-menu">
+            <a href="https://wa.link/p8i8aj" class="button-menu">
                 Receber análise gratuita
             </a>
 
+            <!-- Ícone de menu para mobile -->
             <div class="mobile-menu-icon" id="menu-icon">
-                <i class="ph ph-list"></i>
+                <i class="ph ph-list"></i> <!-- Substitua este ícone pela sua biblioteca de ícones preferida -->
             </div>
         </div>
     </header>
@@ -52,14 +53,16 @@
             <p>Parece mágica, mas é apenas a internet funcionando para sua empresa aumentar o faturamento</p>
 
             <div class="button-banner">
-                <a href="#" class="chamada">Chamar no Whatsapp</a>
+                <a href="https://wa.link/p8i8aj" class="chamada">
+                    <i class="ph ph-whatsapp-logo"></i>
+                    Chamar no Whatsapp</a>
                 <br>
-                <a href="#" class="chamada-2">Receber análise Grátis!</a>
+                <a href="https://wa.link/p8i8aj" class="chamada-2">Receber análise Grátis!</a>
             </div>
         </div>
     </section>
 
-    <section class="servicos">
+    <section id="servicos" class="servicos">
         <div class="container-servicos">
             <div class="bloco-servicos">
                 <img src="img/icon-servicos-1.webp" alt="icon1">
@@ -111,7 +114,7 @@
         </div>
     </section>
 
-    <section class="conteudo-3">
+    <section id="cases" class="conteudo-3">
         <div class="conteudo-3-case">
             <h2>Nossos Cases</h2>
 
@@ -197,7 +200,7 @@
         </div>
     </section>
 
-    <section class="conteudo-6">
+    <section id="depoimentos" class="conteudo-6">
         <div class="container-6">
             <h2>Histórias <spam class="cor-azul">reais de <br> lojistas</spam> como você!</h2>
             <p>Descubra o impacto real do nosso trabalho através das vozes de quem mais <br> importa: nossos clientes!
@@ -228,16 +231,15 @@
                         <div class="img-cards">
                             <img src="img/cliente-1.webp" alt="">
                         </div>
-                        <h3>Leandro Augusto</h3>
+                        <h3>Igor Medeira</h3>
                     </div>
                     <div class="desc-cards">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et totam voluptas debitis recusandae
-                            libero voluptate laboriosam rerum facere vel perferendis praesentium omnis aliquam
-                            doloremque, ratione placeat in, quas, sequi officia!</p>
+                        <p>[…] não tenho mais horário para esse mês, para o mês que vem não tem mais vaga também, não
+                            tenho mais vaga de encaixe e estou fazendo lista de espera.</p>
                     </div>
                     <hr>
                     <div class="img-cards-empresa">
-                        <img src="#" alt="">
+                        <img src="img/m.webp" alt="">
                     </div>
                 </div>
 
@@ -246,16 +248,16 @@
                         <div class="img-cards">
                             <img src="img/cliente-3.webp" alt="">
                         </div>
-                        <h3>Leandro Augusto</h3>
+                        <h3>Alessandra</h3>
                     </div>
                     <div class="desc-cards">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et totam voluptas debitis recusandae
-                            libero voluptate laboriosam rerum facere vel perferendis praesentium omnis aliquam
-                            doloremque, ratione placeat in, quas, sequi officia!</p>
+                        <p>O trabalho de vocês é espetacular, estão de parabéns!!!
+                            Muito satisfatório ter parceiros como vocês, nos ajudando a desenvolver e posicionar a nossa
+                            marca no mundo digital!!!</p>
                     </div>
                     <hr>
                     <div class="img-cards-empresa">
-                        <img src="#" alt="">
+                        <img src="img/a-essencia-logo.png.webp" alt="">
                     </div>
                 </div>
 
@@ -264,17 +266,18 @@
         <br><br><br>
     </section>
 
-    <section class="conteudo-7">
+    <section id="contato" class="conteudo-7">
         <br><br><br><br>
         <div class="container-conteudo-7">
             <h2>Receba uma análise gratuita!</h2>
             <p>Receba uma análise gratuita em sua conta de Google Ads, Facebook Ads, Site e Redes Sociais.
                 Recomendaremos o melhor caminho para o sucesso do seu negócio na internet.</p>
             <div class="button-7">
-                <a href="#" class="button">
+                <a href="https://wa.link/p8i8aj" class="button">
+                    <i class="ph ph-whatsapp-logo"></i>
                     Chamar no Whatsapp
                 </a>
-                <a href="#">
+                <a href="https://wa.link/p8i8aj">
                     Receber análise
                 </a>
             </div>
@@ -307,18 +310,19 @@
     </footer>
 
     <script>
-        // Seleciona o ícone do menu
-        const menuIcon = document.getElementById('menu-icon');
+        // Seleciona o ícone do menu e o menu de categorias
+        const menuIcon = document.querySelector('#menu-icon');
         const categorias = document.querySelector('.categorias');
 
-        // Adiciona um evento de clique para alternar a exibição do menu
+        // Adiciona um evento de clique no ícone do menu
         menuIcon.addEventListener('click', function () {
-            categorias.style.display = categorias.style.display === 'flex' ? 'none' : 'flex';
+            categorias.classList.toggle('active'); // Alterna a classe 'active' no menu
         });
+
     </script>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <a href="https://wa.link/n8rfdz" style="position:fixed;
+    <a href="https://wa.link/p8i8aj" style="position:fixed;
 width:60px;
 height:60px;
 bottom:40px;
