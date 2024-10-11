@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="css/conteudo-7.css">
     <link rel="stylesheet" href="css/footer.css">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <link rel="shortcut icon" href="img/S&F-extensa.png" type="image/x-icon">
 </head>
 
 <body>
@@ -38,9 +40,9 @@
                 Receber análise gratuita
             </a>
 
-            <!-- Ícone de menu para mobile -->
+            <!-- Ícone de menu mobile -->
             <div class="mobile-menu-icon" id="menu-icon">
-                <i class="ph ph-list"></i> <!-- Substitua este ícone pela sua biblioteca de ícones preferida -->
+                <i class="ph ph-list"></i> <!-- Aqui você pode usar um ícone como o FontAwesome ou Phosphor Icons -->
             </div>
         </div>
     </header>
@@ -310,13 +312,15 @@
     </footer>
 
     <script>
-        // Seleciona o ícone do menu e o menu de categorias
-        const menuIcon = document.querySelector('#menu-icon');
-        const categorias = document.querySelector('.categorias');
+        document.addEventListener("DOMContentLoaded", function () {
+            // Seleciona o ícone do menu e o menu de categorias
+            const menuIcon = document.querySelector('#menu-icon');
+            const categorias = document.querySelector('.categorias');
 
-        // Adiciona um evento de clique no ícone do menu
-        menuIcon.addEventListener('click', function () {
-            categorias.classList.toggle('active'); // Alterna a classe 'active' no menu
+            // Adiciona um evento de clique no ícone do menu
+            menuIcon.addEventListener('click', function () {
+                categorias.classList.toggle('active'); // Alterna a classe 'active' no menu
+            });
         });
 
     </script>
