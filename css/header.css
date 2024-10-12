@@ -51,8 +51,8 @@ header {
 
 /* Estilos para dispositivos móveis */
 @media (max-width: 768px) {
-    .categorias {
-        display: none; /* Esconde o menu por padrão */
+    .menu .categorias {
+        display: none;
         flex-direction: column;
         position: absolute;
         top: 90px;
@@ -87,4 +87,6 @@ header {
     .button-menu {
         display: none; /* Esconde o botão no mobile */
     }
+
+
 }

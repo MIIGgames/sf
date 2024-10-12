@@ -27,26 +27,35 @@
             <a href="https://wa.link/p8i8aj" class="logo">
                 <img src="img/S&F-extensa.png" alt="Logo">
             </a>
-
-            <ul class="categorias">
+    
+            <ul class="categorias" id="categorias-menu">
                 <li><a href="#agencia">Agência</a></li>
                 <li><a href="#servicos">Serviços</a></li>
                 <li><a href="#cases">Cases</a></li>
                 <li><a href="#depoimentos">Depoimentos</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
-
+    
             <a href="https://wa.link/p8i8aj" class="button-menu">
                 Receber análise gratuita
             </a>
-
+    
             <!-- Ícone de menu mobile -->
             <div class="mobile-menu-icon" id="menu-icon">
-                <i class="ph ph-list"></i> <!-- Aqui você pode usar um ícone como o FontAwesome ou Phosphor Icons -->
+                <i class="ph ph-list"></i>
             </div>
         </div>
     </header>
-
+    
+    <!-- Script para funcionalidade do menu mobile -->
+    <script>
+        const menuIcon = document.getElementById('menu-icon');
+        const categoriasMenu = document.getElementById('categorias-menu');
+    
+        menuIcon.addEventListener('click', () => {
+            categoriasMenu.classList.toggle('active');
+        });
+    </script>    
 
     <section class="banner">
         <div class="desc-banner">
@@ -311,30 +320,16 @@
 
     </footer>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            // Seleciona o ícone do menu e o menu de categorias
-            const menuIcon = document.querySelector('#menu-icon');
-            const categorias = document.querySelector('.categorias');
-
-            // Adiciona um evento de clique no ícone do menu
-            menuIcon.addEventListener('click', function () {
-                categorias.classList.toggle('active'); // Alterna a classe 'active' no menu
-            });
-        });
-
-    </script>
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <a href="https://wa.link/p8i8aj" style="position:fixed;
-width:60px;
-height:60px;
-bottom:40px;
-right:40px;
-background-color:#25d366;color:#FFF;
-border-radius:50px;
-text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
-z-index:1000;" target="_blank">
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:#25d366;color:#FFF;
+    border-radius:50px;
+    text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
+    z-index:1000;" target="_blank">
         <i style="margin-top:16px" class="fa fa-whatsapp"></i>
     </a>
 
